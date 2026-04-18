@@ -58,7 +58,7 @@ These findings highlight an important trade-off between profitability and financ
 
 README.md ： Project documentation
 
-individual task.ipynb ： Main analysis notebook
+LiuyingChen2470403-checkpoint.ipynb ： Main analysis notebook
 
 ---
 
