@@ -45,7 +45,7 @@ An OLS regression model is applied to examine the relationship between profitabi
 
 ## 5. Project Structure
 
-analysis.ipynb → Main analysis notebook
+individual task.ipynb → Main analysis notebook
 README.md → Project documentation
 
 ---
@@ -60,6 +60,6 @@ README.md → Project documentation
 
 ## 7. Conclusion
 
-The analysis shows that larger firms achieve higher profitability and efficiency but also face higher financial risk. Investors should consider the trade-off between return and risk when making decisions.
+The analysis shows that larger firms achieve higher profitability and efficiency, as reflected in increasing ROA and ROE. However, they also rely more on leverage, indicating higher financial risk. Smaller firms demonstrate more unstable performance, with negative profit margins in some cases. Although regression results suggest a positive relationship between leverage and profitability, the findings are not statistically significant due to the small sample size. Overall, investors should consider the trade-off between profitability and risk when making investment decisions.
 
 ---
