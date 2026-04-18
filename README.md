@@ -56,17 +56,28 @@ These findings highlight an important trade-off between profitability and financ
 
 ## 6. Project Structure
 
-individual task.ipynb ： Main analysis notebook
-
 README.md ： Project documentation
+
+individual task.ipynb ： Main analysis notebook
 
 ---
 
 ## 7. Limitations
 
-Although the original dataset is large and rich in firm-level information, the decision to aggregate firms into four size categories significantly reduces the number of observations available for analysis. This loss of granularity not only weakens the statistical power of the regression model but also masks heterogeneity across firms within each size group.
+This analysis has several limitations that should be considered when interpreting the results.
 
-Consequently, the model may fail to detect statistically significant relationships, even if such relationships exist in the underlying data.
+First, although the original dataset contains extensive firm-level observations, the data is aggregated into four firm size groups for analytical clarity. This aggregation significantly reduces the number of observations and limits the statistical power of the regression model.
+
+Second, grouping firms may mask important variations within each category. Firms within the same size group can differ substantially in terms of profitability, risk, and operational characteristics, which are not captured in this analysis.
+
+Third, the regression model includes only a limited number of explanatory variables, such as leverage and profit margin. Other important factors, including industry effects, firm-specific characteristics, and macroeconomic conditions, are not considered, which may lead to omitted variable bias.
+
+In addition, the analysis is based on cross-sectional data and does not account for changes over time. Therefore, it cannot capture dynamic trends in firm performance.
+
+Finally, the findings are based on Chinese listed companies, which may limit the generalisability of the results to other markets.
+
+Overall, these limitations suggest that the results should be interpreted with caution, and further research using more detailed and longitudinal data is recommended.
+
 
 ---
 
