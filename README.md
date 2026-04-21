@@ -34,21 +34,21 @@ The analysis is conducted in three main stages:
 * Removed missing values
 * Ensured consistency across financial indicators
 
-### 2. Regression Analysis
-
-An Ordinary Least Squares (OLS) regression model is applied:
-
-ROA = β₀ + β₁(Leverage) + β₂(Profit Margin) + ε
-
-This model evaluates how leverage and operational performance affect firm profitability.
-
-### 3. Data Visualization
+### 2. Data Visualization
 
 Several visualizations are used to explore patterns:
 
 * Bar charts to compare financial indicators across size groups
 * Line plots (normalized) to examine trends
 * Boxplots to analyze the distribution of firm size
+  
+### 3. Regression Analysis
+
+An Ordinary Least Squares (OLS) regression model is applied:
+
+ROA = β₀ + β₁(Leverage) + β₂(Profit Margin) + ε
+
+This model evaluates how leverage and operational performance affect firm profitability.
 
 ---
 
