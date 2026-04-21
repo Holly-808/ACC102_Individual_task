@@ -90,7 +90,7 @@ For investors, the findings emphasize the importance of evaluating both return a
 
 ## Repository Contents
 
-* `LiuyingChen2470403_checkpoint.ipynb` – Full data analysis and visualization
+* `LiuyingChen2470403-checkpoint.ipynb` – Full data analysis and visualization
 * `README.md` – Project documentation
 
 ---
