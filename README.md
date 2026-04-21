@@ -88,6 +88,22 @@ For investors, the findings emphasize the importance of evaluating both return a
 
 ---
 
+## Investment Implications
+
+Based on the analysis, several practical insights can be drawn for investors.
+
+First, larger firms tend to deliver stronger profitability, as reflected in higher net profit, ROA, and ROE. This suggests that investing in larger firms may provide more stable and consistent returns.
+
+However, the results also show that leverage increases with firm size, and regression analysis indicates that higher leverage has a negative impact on profitability. This implies that excessive reliance on debt may weaken firm performance and increase financial risk.
+
+Therefore, investors should not focus solely on firm size or profitability indicators. Instead, it is important to evaluate a firm’s capital structure and assess whether its level of leverage is sustainable.
+
+In addition, while profit margin contributes positively to performance, its effect is relatively limited compared to leverage. This suggests that financial risk management plays a more critical role than operational efficiency in determining overall profitability in this context.
+
+Overall, investors are advised to adopt a balanced approach by considering both return and risk. Firms with strong profitability but moderate and well-managed leverage may offer more attractive long-term investment opportunities.
+
+---
+
 ## Repository Contents
 
 * `LiuyingChen2470403-checkpoint.ipynb` – Full data analysis and visualization
