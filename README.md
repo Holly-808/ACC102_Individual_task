@@ -1,88 +1,121 @@
 # ACC102_Individual_task
 ## Firm_Performance_Analysis
 
-## 1. Introduction
-This project focuses on a business question: How do firm size and leverage affect profitability of Chinese listed companies? Which analyses the relationship between firm size, financial leverage, and profitability using financial data from CSMAR. The objective is to provide data-driven insights that can support investors in evaluating firm performance and making more informed investment decisions.
+## Project Overview
 
-Profitability is assessed using multiple indicators, including Return on Assets (ROA), Return on Equity (ROE), and profit margin, allowing for a comprehensive evaluation of asset efficiency, shareholder returns, and operational performance.
+This project investigates the relationship between firm size, leverage, and profitability using financial data from Chinese listed companies obtained from the CSMAR database.
 
----
-
-## 2. Data Source
-The data is obtained from the CSMAR database, which provides financial information on Chinese listed companies.
-
-Key variables include:
-Net Profit
-ROA (Return on Assets)
-ROE (Return on Equity)
-Leverage
-Profit Margin
-
-For analytical clarity, Firms are grouped into four size categories based on their scale, using total size indicators (e.g., total assets or net profit) to classify companies into “Low”, “Medium-Low”, “Medium-High”, and “High” groups.
-
-The grouping is designed to simplify the analysis and allow for clearer comparison of financial performance across different firm sizes. By aggregating firms into size-based categories, the study highlights general patterns in profitability, efficiency, and financial risk.
+The objective is to understand how firm characteristics influence performance and to provide insights that can support investment decision-making.
 
 ---
 
-## 3. Methodology
+## Dataset
 
-### Data Visualisation
+The dataset is sourced from the CSMAR financial database and includes key financial indicators such as:
 
-Bar charts are used to compare financial performance across firm size groups.
-A dual-axis chart is used to compare ROA (profitability) and leverage (financial risk) across firm size groups. ROA is presented as a line, while leverage is shown as a bar chart on a secondary axis to highlight their relationship.
+* Firm Size (proxied by total assets)
+* Net Profit
+* Return on Assets (ROA)
+* Return on Equity (ROE)
+* Leverage
+* Profit Margin
 
-### Regression Analysis
-
-An Ordinary Least Squares (OLS) regression model is applied to examine the relationship between profitability (ROA) and key financial factors such as leverage and profit margin.
-
----
-
-## 4. Key Insights for Investors
-Larger firms generate significantly higher net profits, indicating strong economies of scale and more stable earnings potential.
-Profitability (ROA and ROE) improves with firm size, suggesting that larger firms are more efficient in utilizing assets and delivering returns to shareholders.
-Leverage increases with firm size, implying that higher profitability may be accompanied by greater financial risk.
-Smaller firms exhibit negative or volatile profit margins, indicating potential operational instability and higher uncertainty.
-
-These findings highlight an important trade-off between profitability and financial risk, which investors should consider when evaluating investment opportunities.
+To facilitate analysis, firms are grouped into four categories (Low, Medium-Low, Medium-High, High) based on quartiles of firm size. This grouping enables comparison of financial performance across different scales of operation.
 
 ---
 
-## 5. Investment Implications
-* Investors seeking stable returns may prefer larger firms due to their higher profitability and efficiency.
-* Investors with higher risk tolerance may explore smaller firms for potential growth opportunities, but should be cautious of financial instability.
-* The increasing leverage among larger firms suggests the need to carefully assess debt levels when evaluating investment risk.
+## Methodology
+
+The analysis is conducted in three main stages:
+
+### 1. Data Cleaning
+
+* Converted variables to numeric format
+* Removed missing values
+* Ensured consistency across financial indicators
+
+### 2. Regression Analysis
+
+An Ordinary Least Squares (OLS) regression model is applied:
+
+ROA = β₀ + β₁(Leverage) + β₂(Profit Margin) + ε
+
+This model evaluates how leverage and operational performance affect firm profitability.
+
+### 3. Data Visualization
+
+Several visualizations are used to explore patterns:
+
+* Bar charts to compare financial indicators across size groups
+* Line plots (normalized) to examine trends
+* Boxplots to analyze the distribution of firm size
 
 ---
 
-## 6. Project Structure
+## Key Insights
 
-README.md ： Project documentation
+The analysis reveals several important patterns.
 
-LiuyingChen2470403-checkpoint.ipynb ： Main analysis notebook
+First, firm size is strongly associated with performance. Larger firms generate significantly higher net profits and demonstrate improved efficiency, as reflected in higher ROA and ROE.
 
----
+Second, profit margin increases across size groups, indicating that larger firms benefit from better cost control and operational efficiency.
 
-## 7. Limitations
+Third, leverage rises consistently with firm size, suggesting that larger firms rely more heavily on debt financing.
 
-This analysis has several limitations that should be considered when interpreting the results.
+Fourth, regression results show that leverage has a statistically significant negative impact on ROA, indicating that higher financial risk may reduce profitability. In contrast, profit margin has a relatively weak positive effect.
 
-First, although the original dataset contains extensive firm-level observations, the data is aggregated into four firm size groups for analytical clarity. This aggregation significantly reduces the number of observations and limits the statistical power of the regression model.
-
-Second, grouping firms may mask important variations within each category. Firms within the same size group can differ substantially in terms of profitability, risk, and operational characteristics, which are not captured in this analysis.
-
-Third, the regression model includes only a limited number of explanatory variables, such as leverage and profit margin. Other important factors, including industry effects, firm-specific characteristics, and macroeconomic conditions, are not considered, which may lead to omitted variable bias.
-
-In addition, the analysis is based on cross-sectional data and does not account for changes over time. Therefore, it cannot capture dynamic trends in firm performance.
-
-Finally, the findings are based on Chinese listed companies, which may limit the generalisability of the results to other markets.
-
-Overall, these limitations suggest that the results should be interpreted with caution, and further research using more detailed and longitudinal data is recommended.
-
+Overall, the findings highlight a trade-off between performance and financial risk, where larger firms achieve stronger results but also take on greater leverage.
 
 ---
 
-## 8. Conclusion
+## Limitations
 
-The analysis shows that larger firms achieve higher profitability and efficiency, as reflected in increasing ROA and ROE. However, they also rely more on leverage, indicating higher financial risk. Smaller firms demonstrate more unstable performance, with negative profit margins in some cases. Although regression results suggest a positive relationship between leverage and profitability, the findings are not statistically significant due to the small sample size. Overall, investors should consider the trade-off between profitability and risk when making investment decisions.
+Several limitations should be considered when interpreting the results.
+
+Although the dataset is large, grouping firms into size categories reduces firm-level detail and may mask variation within groups. In addition, the data exhibits skewness and extreme values, particularly among larger firms, which may influence both visualizations and regression results.
+
+The regression model is relatively simple and does not include other potentially important variables such as industry effects or macroeconomic conditions. Furthermore, the assumptions of the OLS model may not fully hold due to non-normality in the data.
+
+These factors suggest that the results should be interpreted with caution.
+
+---
+
+## Conclusion
+
+This project demonstrates that firm size plays a significant role in shaping profitability and financial structure. Larger firms tend to achieve higher profitability and efficiency, but this is accompanied by increased reliance on leverage.
+
+For investors, the findings emphasize the importance of evaluating both return and risk. While larger firms may offer stronger performance, their higher leverage levels introduce additional financial risk that should be carefully assessed.
+
+---
+
+## Repository Contents
+
+* `LiuyingChen2470403_checkpoint.ipynb` – Full data analysis and visualization
+* `README.md` – Project documentation
+
+---
+
+## How to Run
+
+1. Open the Jupyter Notebook
+2. Run all cells in order
+3. Review visualizations and regression results
+
+---
+
+## Author
+
+LiuyingChen
+ACC102 Individual Task
+
+---
+
+## AI Usage Disclosure
+
+Tool: ChatGPT (OpenAI, GPT-5.3)
+Access Date: April 2026
+
+AI was used to assist with code debugging, improving workflow structure, and refining explanations of analysis results. All analytical decisions, interpretations, and final outputs were reviewed and adjusted by the author.
+
 
 ---
