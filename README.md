@@ -122,7 +122,7 @@ Overall, investors are advised to adopt a balanced approach by considering both 
 ## Author
 
 LiuyingChen
-2470403
+（2470403）
 ---
 
 ## AI Usage Disclosure
